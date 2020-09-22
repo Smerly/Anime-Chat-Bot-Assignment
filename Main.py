@@ -6,8 +6,8 @@ def get_bot_response(user_response):
     
 
     bot_response_greeting = ["Hello there... how are you today?", "mmm... What? Oh. Hey", "What's up?"]
-    bot_response_gratitude = ["Really? I appreciate it", "What? Oh. Thanks."]
-    bot_response_gratitude_affection = ["Stop it~~~! Hmph. Thanks...", "Thanks <3"]
+    bot_response_gratitude = ["Really? I appreciate it", "What? Oh. Thanks.", "Aww.... thanks...~~~"]
+    bot_response_gratitude_affection = ["Stop it~~~! Hmph. Thanks...", "Thanks <3", "Oooh~ since when were you this nice?"]
     bot_response_affection = ["Hooh...? Someone's got a little crush? Don't worry, its natural.", "Ara~ Ara~~ Are my charms and features too much for you?"]
     bot_response_nothing = ["Hmm? Could you say that one more time? (Not something you can say)"]
     
@@ -25,7 +25,7 @@ def get_bot_response(user_response):
         return choice(bot_response_greeting)
 
     elif user_response in user_response_gratitude:
-        return choice(bot_response_gratitute)
+        return choice(bot_response_gratitude)
     
     elif user_response == "list":
         return interactions
